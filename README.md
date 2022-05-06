@@ -20,3 +20,13 @@ git add .
 ```text
 git commit -m "<commit message>"
 ```
+
+## Push local changes to server
+```text
+git push origin <branch-name>
+```
+
+## Create a new local branch
+```text
+git checkout -b "<branch-name>"
+```
