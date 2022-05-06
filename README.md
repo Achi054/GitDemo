@@ -20,3 +20,8 @@ git add .
 ```text
 git commit -m "<commit message>"
 ```
+
+## Create a new local branch
+```text
+git checkout -b "<branch-name>"
+```
