@@ -1,4 +1,4 @@
-# Git Commands
+# **Git Commands**
 
 ## _Repo initialization_
 Make sure you are in the root directory of the project you want to push to source control.
