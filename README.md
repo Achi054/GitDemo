@@ -21,12 +21,23 @@ git add .
 git commit -m "<commit message>"
 ```
 
+## Create a new local branch
+```text
+git checkout -b "<branch-name>"
+```
+
 ## Push local changes to server
 ```text
 git push origin <branch-name>
 ```
 
-## Create a new local branch
+## Delete remote branch
 ```text
-git checkout -b "<branch-name>"
+git push -d origin <branch-name>
+```
+
+## Delete local branch
+Make sure to be on another branch than the branch to delete.
+```text
+git branch -D <branch-name>
 ```
