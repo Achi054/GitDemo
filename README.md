@@ -30,3 +30,8 @@ git push origin <branch-name>
 ```text
 git checkout -b "<branch-name>"
 ```
+
+## Merge change from another branch
+```text
+git merge <source-branch-name>
+```
