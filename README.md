@@ -1,43 +1,43 @@
-# Git Commands
+# **Git Commands**
 
-## Repo initialization
+## _Repo initialization_
 Make sure you are in the root directory of the project you want to push to source control.
 ```text
 git init
 ```
 
-## Link to remote
+## _Link to remote_
 ```text
 git remote add origin <repo-url>
 ```
 
-## Add file to git
+## _Add file to git_
 ```text
 git add .
 ```
 
-## Commit your changes
+## _Commit your changes_
 ```text
 git commit -m "<commit message>"
 ```
 
-## Create a new local branch
+## _Create a new local branch_
 ```text
 git checkout -b "<branch-name>"
 ```
 
-## Push local changes to server
+## _Push local changes to server_
 ```text
 git push origin <branch-name>
 ```
 
-## Delete remote branch
-```text
-git push -d origin <branch-name>
-```
-
-## Delete local branch
+## _Delete local branch_
 Make sure to be on another branch than the branch to delete.
 ```text
 git branch -D <branch-name>
+```
+
+## _Merge change from another branch_
+```text
+git merge <source-branch-name>
 ```
