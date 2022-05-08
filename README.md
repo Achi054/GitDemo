@@ -1,5 +1,12 @@
 # **Git Commands**
 
+## _Introduction_
+**Git** is a distributed version control tool that can manage a development project's source code and its history.
+
+**GitHub** GitHub is a cloud based platform built around the Git tool.
+
+The key difference between **Git** and **GitHub** is that **Git** is an open-source tool developers install locally to manage source code, while **GitHub** is an online service to which developers who use Git can connect and upload or download resources.
+
 ## _Repo initialization_
 Make sure you are in the root directory of the project you want to push to source control.
 ```text
