@@ -33,32 +33,54 @@ _git init_ is one way to start a new project with Git. To initialize a repositor
 git init
 ```
 
+<a name="clone"></a>
+## _Clone your remote repository_
+The _git clone_ command is used to create a copy of a specific repository or branch within a repository.
+```text
+git clone <repo-url>
+```
+
 <a name="remote"></a>
 ## _Link to remote_
+The _git remote_ manages the set of remotes that you are tracking with your local repository.
 ```text
 git remote add origin <repo-url>
 ```
 
 <a name="add"></a>
 ## _Add file to git_
+The _git add_ command adds new or changed files in your working directory to the Git staging area.
 ```text
-git add .
+git add <file-name>
 ```
 
 <a name="commit"></a>
 ## _Commit your changes_
+Commits are the building blocks of "save points" within Git's version control.
 ```text
-git commit -m "<commit message>"
+git commit -m "<commit-message>"
+
+Flavors:
+To add all files and commit
+git commit -am "<commit-message>"
 ```
 
 <a name="checkout"></a>
 ## _Create new local branch_
+The _git checkout_ command lets you navigate between the branches created by git branch. The _git checkout_ command accepts a _-b_ argument that acts as a convenience method which will create the new branch and immediately switch to it.ranch.
 ```text
-git checkout -b "<branch-name>"
+git checkout <branch-name>
+git switch <branch-name>
+
+Flavors:
+To create new branch
+git checkout -b <branch-name>
+git switch -c <branch-name>
 ```
 
 <a name="push"></a>
 ## _Push local changes to server_
+The _git push_ uploads all local branch commits to the corresponding remote branch.
 ```text
 git push origin <branch-name>
 ```
