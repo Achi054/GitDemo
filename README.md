@@ -38,13 +38,26 @@ git branch -D <branch-name>
 ```
 
 ## _Merge change from another branch_
-Make sure to be on the target branch to merge to.
+Make sure to be on the target branch.
 ```text
 git merge <source-branch-name>
 ```
 
-## _Rebase changes from another branch_
-Make sure to be on the target branch to rebase to.
+## _Rebase change from another branch_
+Make sure to be on the target branch.
 ```text
 git rebase <source-branch-name>
 ```
+
+## _Revert your commits_
+**--hard**: Reverts without trace.
+```text
+git revert --hard HEAD~1
+```
+
+**--soft**: Reverts to previous commit with original commit changes merged.
+```text
+git revert --soft HEAD~1
+```
+**HEAD~(n)**: _n_ signifies number of commit to revert.
+
