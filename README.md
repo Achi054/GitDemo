@@ -38,8 +38,15 @@ git branch -D <branch-name>
 ```
 
 ## _Merge change from another branch_
+Make sure to be on the target branch.
 ```text
 git merge <source-branch-name>
+```
+
+## _Rebase change from another branch_
+Make sure to be on the target branch.
+```text
+git rebase <source-branch-name>
 ```
 
 ## _Revert your commits_
