@@ -42,6 +42,15 @@ git branch -D <branch-name>
 git merge <source-branch-name>
 ```
 
-adding dummy code
+## _Revert your commits_
+**--hard**: Reverts without trace.
+```text
+git revert --hard HEAD~1
+```
 
-adding more dummy
+**--soft**: Reverts to previous commit with original commit changes merged.
+```text
+git revert --soft HEAD~1
+```
+**HEAD~(n)**: _n_ signifies number of commit to revert.
+
