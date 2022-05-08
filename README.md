@@ -87,13 +87,23 @@ git push origin <branch-name>
 
 <a name="delete"></a>
 ## _Delete local branch_
+The _git branch -d or -D_ delete a local branch in Git.
 Make sure to be on another branch than the branch to delete.
 ```text
+Flavors:
+To delete local branch, if no unmerged changes
+git branch -d <branch-name>
+
+To delete local branch, if force deletion
 git branch -D <branch-name>
+
+To delete branch at remote
+git push -d origin <branch-name>
 ```
 
 <a name="merge"></a>
 ## _Merge change from another branch_
+The _git merge_ will combine multiple sequences of commits into one unified history. In the most frequent use cases, git merge is used to combine two branches.
 Make sure to be on the target branch.
 ```text
 git merge <source-branch-name>
@@ -101,6 +111,7 @@ git merge <source-branch-name>
 
 <a name="rebase"></a>
 ## _Rebase change from another branch_
+The _git rebase_ is used for moving or combining a sequence of commits to a new base commit.
 Make sure to be on the target branch.
 ```text
 git rebase <source-branch-name>
@@ -108,19 +119,21 @@ git rebase <source-branch-name>
 
 <a name="revert"></a>
 ## _Revert your commits_
-**--hard**: Reverts without trace.
+The _git revert_ command is used for undoing changes to a repository's commit history.
 ```text
+Flavors:
 git revert --hard HEAD~1
-```
+--hard: Reverts without trace.
 
-**--soft**: Reverts to previous commit with original commit changes merged.
-```text
 git revert --soft HEAD~1
+--soft: Reverts to previous commit with original commit changes merged.
+
+HEAD~(n): _n_ signifies number of commit to revert.
 ```
-**HEAD~(n)**: _n_ signifies number of commit to revert.
 
 <a name="squash"></a>
 ## _Squash all commits_
+The _git rebase_ with interactive mode to squash multiple commits to one commit.
 ```text
 git rebase -i <commit-hash>
 ```
