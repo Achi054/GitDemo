@@ -137,3 +137,13 @@ The _git rebase_ with interactive mode to squash multiple commits to one commit.
 ```text
 git rebase -i <commit-hash>
 ```
+
+<a name="log"></a>
+## _Log details of the local commit history_
+The _git log_ details out commit histories of current branch.
+```text
+git log
+
+Flavor:
+git log --oneline
+```
