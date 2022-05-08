@@ -38,6 +38,7 @@ git branch -D <branch-name>
 ```
 
 ## _Merge change from another branch_
+Make sure to be on the target branch to merge to.
 ```text
 git merge <source-branch-name>
 ```
