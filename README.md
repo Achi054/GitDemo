@@ -43,8 +43,8 @@ Make sure to be on the target branch to merge to.
 git merge <source-branch-name>
 ```
 
-adding dummy code
-
-adding more dummy
-
-adding feature dummy
+## _Rebase changes from another branch_
+Make sure to be on the target branch to rebase to.
+```text
+git rebase <source-branch-name>
+```
